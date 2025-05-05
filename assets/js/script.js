@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const checkbox = document.getElementById("switch");
     const priceElement = document.querySelector(".plan-main");
     const descElement = document.querySelector(".plan-price-wrap .desc");
-    const btn = document.querySelector(".card-ribbon .btn.btn-primary");
+    const btn = document.querySelector(".standard-card .btn");
 
     checkbox.addEventListener("change", function () {
         if (checkbox.checked) {
@@ -95,6 +95,21 @@ document.addEventListener("DOMContentLoaded", function () {
                 activeContent.classList.add("is-active");
             }
         });
+    });
+
+    // change link on radio button 
+    const radios = document.querySelectorAll('input[name="radio-group"]');
+    const learnMorebutton = document.querySelector('.learnMoreJs');
+    function updateLink() {
+        const selected = document.querySelector('input[name="radio-group"]:checked');
+        if (selected) {
+            const link = selected.getAttribute('data-link');
+            learnMorebutton.setAttribute('href', link);
+        }
+    }
+    updateLink();
+    radios.forEach(radio => {
+        radio.addEventListener('change', updateLink);
     });
 
 });

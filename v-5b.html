@@ -7,7 +7,7 @@
     <meta name="description" content="Learn about point.me's services and pricing, including annual memberships with access to self-serve flight award search and personalized services to help you find and book a flight with miles.">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="v-5">
     <header class="site-header">
         <div class="header-wrap">
             <div class="logo-menu">
@@ -208,52 +208,61 @@
             <h2 class="title">Choose your plan now to <span class="purple-text">avoid your</span> points losing value</h2>
             <p class="subtitle">(see explanation below)</p>
             <div class="pricing-group">
-                <div class="pricing-card">
-                    <h4 class="pricing-heading">Free Forever</h4>
-                    <p class="pricing-subheading">Not ready? See where you can go with your points. <u>Does not include live flights.</u></p>
-                    <ul class="check-list">
-                        <li>Unlock search filters and discover where you can go with your points for specific travel dates.</li>
-                        <li>See sample deals to your dream destinations (<u>upgrade to select specific airports</u> in live search).</li>
-                        <li>Get exclusive weekly points deals via email.</li>
-                    </ul>
-                    <a href="https://www.point.me/signup/basic" class="btn btn-secondary">Explore for free</a>
+                <div class="pricing-card standard-card free-card">
+                    <div>
+                        <h4 class="pricing-heading">Standard</h4>
+                        <p class="pricing-subheading">Everything in Free Forever plus…</p>
+                        <div class="open-content">
+                            <ul class="check-list">
+                                <li>Real-time flight search with unlimited searches*</li>
+                                <li>Step-by-step booking instruction</li>
+                                <li>Award flight deal alerts</li>
+                                <li>Unlock search filters and discover where you can go with your points for specific travel dates.</li>
+                                <li>See sample deals to your dream destinations.</li>
+                                <li>Get exclusive weekly points deals via email.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="plan-price-wrap">
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" id="switch" checked><label for="switch"></label>
+                                <div>
+                                    <span class="checkbox-text">Annual (10% OFF applied)</span>
+                                    <p class="checkbox-text2"><u>Three</u> route-specific alerts 🚨</p>
+                                </div>
+                            </div>
+                            <p class="plan-price">
+                                <span class="plan-main">ONLY $10.75</span>
+                                <span class="plan-period">/ per month</span>
+                            </p>
+                            <p class="desc">(billed as $129 annually)</p>
+                        </div>
+                        <a href="https://www.point.me/signup/standard" class="btn btn-secondary">Get Started Now</a>
+                    </div>
                 </div>
                 <div class="pricing-card card-ribbon">
-                    <h5 class="pricing-ribbon ribbon-popular">MOST POPULAR</h5>
-                    <h4 class="pricing-heading">Standard</h4>
-                    <p class="pricing-subheading">Everything in Free Forever plus…</p>
-                    <ul class="check-list">
-                        <li>Real-time flight search with unlimited searches*</li>
-                        <li>Step-by-step booking instruction</li>
-                        <li>Award flight deal alerts</li>
-                        <li>Unlock search filters and discover where you can go with your points for specific travel dates.</li>
-                        <li>See live deals from your preferred airports to your dream destinations.</li>
-                        <li>Get exclusive weekly points deals via email.</li>
-                    </ul>
-                    <div class="plan-price-wrap">
-                        <div class="checkbox-wrapper">
-                            <input type="checkbox" id="switch" checked><label for="switch"></label>
-                            <span class="checkbox-text">Annual (10% OFF applied)</span>
+                    <div>
+                        <h5 class="pricing-ribbon ribbon-premium">BEST DEAL</h5>
+                        <h4 class="pricing-heading">Premium</h4>
+                        <p class="pricing-subheading">Everything in Standard plus...</p>
+
+                        <div class="starburst-ico">
+                            <img class="img-fluid" loading="lazy" src="assets/images/starburst.svg" alt="free $200">
                         </div>
-                        <p class="plan-price">
-                            <span class="plan-main">ONLY $10.75</span>
-                            <span class="plan-period">/ per month</span>
-                        </p>
-                        <p class="desc">(billed as $129 annually)</p>
-                    </div>
-                    <a href="https://www.point.me/signup/standard" class="btn btn-primary">Get Started Now</a>
-                </div>
-                <div class="more-option-title">
-                    <p>More options</p>
-                </div>
-                <div class="pricing-card open-item collapse-mob">
-                    <h4 class="pricing-heading">Premium <span>(best deal)</span></h4>
-                    <p class="pricing-subheading">Includes everything in standard and free credits toward concierge services.</p>
-                    <div class="open-content">
+
                         <ul class="check-list">
-                            <li>Free Points Strategy Consultation ($200 value)</li>
-                            <li>$100 credit towards Concierge services</li>
-                            <li>10% discount on Concierge services</li>
+                            <li>Free points strategy consultation included (normally $200), <u>so it's like paying only $60 a year</u></li>
+                            <li>$100 credit towards concierge services</li>
+                            <li>10% discount on concierge services</li>
+                        </ul>
+                        <div class="quote-card">
+                            <p>“The Premium membership was the best money I’ve ever spent. I’m so glad I found point.me and will be renewing my membership every year”</p>
+                            <p class="bold">– Julie K.</p>
+                        </div>
+                        <ul class="check-list">
+                            <li class="item-primary">Get a total of $475 of value</li>
+                            <li>Includes everything in Standard Annual and <u>five</u> route-specific alerts 🚨</li>
                         </ul>
                         <div class="plan-price-wrap">
                             <p class="plan-price">
@@ -262,7 +271,64 @@
                             </p>
                             <p class="desc">(billed as $260 annually)</p>
                         </div>
-                        <a href="http://point.me/signup/premium" class="btn btn-secondary">Get Started Now</a>
+                    </div>
+                    <a href="http://point.me/signup/premium" class="btn btn-primary">Get started now</a>
+                </div>
+                <div class="more-option-title">
+                    <p>More options</p>
+                </div>
+                <div class="pricing-card open-item collapse-mob">
+                    <div>
+                        <h4 class="pricing-heading">Concierge <span class="show-sm">($200+ per person)</span></h4>
+                        <p class="pricing-subheading">Let our experts do the work for you. Starts at $200 per passenger</p>
+                        <div class="open-content">
+                            <ul class="radio-list">
+                                <li>
+                                    <input type="radio" id="item1" name="radio-group" data-link="https://connect.point.me/concierge-booking" checked>
+                                    <label for="item1">Full-service flight booking with a concierge</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="item2" name="radio-group" data-link="https://connect.point.me/points-strategy-consults">
+                                    <label for="item2">Points strategy consultation</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="item3" name="radio-group" data-link="https://www.point.me/mileage-runs">
+                                    <label for="item3">Elite status and mileage runs</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="item4" name="radio-group" data-link="https://connect.point.me/premierservices">
+                                    <label for="item4">Custom packages</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="open-content">
+                        <div class="plan-price-wrap">
+                            <p class="desc">Starts at</p>
+                            <p class="plan-price">
+                                <span class="plan-main">$200</span>
+                                <span class="plan-period">/ per passenger</span>
+                            </p>
+                        </div>
+                        <a href="https://connect.point.me/concierge-booking" class="btn btn-secondary learnMoreJs">Learn more</a>
+                    </div>
+                    <span class="open-btn">
+                        <svg width="20" height="18" viewBox="0 0 20 18"><use xlink:href='#open-ico'/></svg>
+                    </span>
+                </div>
+            </div>
+            <div class="pricing-row">
+                <div class="pricing-card open-item collapse-mob">
+                    <div>
+                        <h4 class="pricing-heading">Free Forever</h4>
+                        <h4 class="t-h4">Not ready? See where you can go with your points.
+                            Does not include live flights.</h4>
+                        <p class="pricing-subheading open-content">Unlock search filters and discover where you can go with your points for specific travel dates
+                            See sample deals to your dream destinations (<u>upgrade to select specific airports</u> in live search)
+                            Get exclusive weekly points deals via email</p>
+                    </div>
+                    <div class="open-content">
+                        <a href="https://www.point.me/signup/basic" class="btn btn-secondary">Explore for free</a>
                     </div>
                     <span class="open-btn">
                         <svg width="20" height="18" viewBox="0 0 20 18"><use xlink:href='#open-ico'/></svg>
@@ -271,215 +337,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Start concierge section -->
-    <section class="concierge-section collapse-mob">
-        <div class="content-wrap">
-            <div class="title-row">
-                <div>
-                    <h2 class="title-section"><strong>Concierge</strong></h2>
-                    <p class="subtitle">Save time with our <span class="purple-text">concierge services</span></p>
-                </div>
-                <div class="title-img">
-                    <img class="img-fluid" loading="lazy" src="assets/images/sleeping-dog.svg" alt="sleeping dog">
-                </div>
-            </div>
-            <div class="card-row">
-                <div class="card-item">
-                    <div class="card-item-body">
-                        <div class="card-item-head">
-                            <div class="card-item-img">
-                                <picture>
-                                    <source srcset="assets/images/2x/webp/about_service@2x.webp 2x, assets/images/webp/about_service.webp 1x" type="image/webp">
-                                    <source srcset="assets/images/2x/about_service@2x.png 2x, assets/images/about_service.png 1x" type="image/png">
-                                    <img src="assets/images/about_service.png" alt="Full service flight booking" loading="lazy" class="img-fluid">
-                                </picture>
-                            </div>
-                            <h4 class="card-item-title">Full service flight booking</h4>
-                        </div>
-                        <p class="card-item-subtitle">Get your time back and let an expert book for your next flight</p>
-                        <div class="icon-list">
-                            <div class="icon-list-item">
-                                <div class="icon-logo">
-                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.54298 2.64478V5.19167V2.64478ZM2.26953 3.91822H4.81643H2.26953ZM4.1797 11.5589V14.1058V11.5589ZM2.90626 12.8324H5.45315H2.90626ZM8.63677 2.64478L10.0923 7.01079L13.7306 8.37529L10.0923 9.73979L8.63677 14.1058L7.18122 9.73979L3.54298 8.37529L7.18122 7.01079L8.63677 2.64478Z" fill="white"/>
-                                        <path d="M3.54298 2.64478V5.19167M2.26953 3.91822H4.81643M4.1797 11.5589V14.1058M2.90626 12.8324H5.45315M8.63677 2.64478L10.0923 7.01079L13.7306 8.37529L10.0923 9.73979L8.63677 14.1058L7.18122 9.73979L3.54298 8.37529L7.18122 7.01079L8.63677 2.64478Z" stroke="black" stroke-width="0.636724" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>    
-                                </div>
-                                <p>Custom itineraries built for your needs and preferences</p>
-                            </div>
-                            <div class="icon-list-item">
-                                <div class="icon-logo">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5.08987 12.1058H8.91024ZM6.99989 12.1058V8.57935ZM10.5262 5.49363C10.5262 4.0985 10.524 1.78453 10.5229 1.08558C10.5229 0.968675 10.4764 0.856554 10.3938 0.773884C10.3111 0.691219 10.199 0.644775 10.0821 0.644775L3.91675 0.651939C3.80008 0.651939 3.68817 0.698189 3.60554 0.780563C3.52292 0.862931 3.47632 0.974697 3.47595 1.09136C3.47595 1.93386 3.47237 4.65005 3.47237 5.49363C3.47237 7.26456 5.759 8.5793 6.99875 8.5793C8.23846 8.5793 10.5262 7.26456 10.5262 5.49363ZM10.5262 5.49363C11.8059 5.49363 12.7306 3.92921 12.7306 2.40788V1.96707H10.5266M3.47351 1.96707H1.26953V2.40788C1.26953 3.92921 2.19383 5.49352 3.47351 5.49352" fill="white"/>
-                                        <path d="M5.08987 12.1058H8.91024M6.99989 12.1058V8.57935M10.5262 5.49363C10.5262 4.0985 10.524 1.78453 10.5229 1.08558C10.5229 0.968675 10.4764 0.856554 10.3938 0.773884C10.3111 0.691219 10.199 0.644775 10.0821 0.644775L3.91675 0.651939C3.80008 0.651939 3.68817 0.698189 3.60554 0.780563C3.52292 0.862931 3.47632 0.974697 3.47595 1.09136C3.47595 1.93386 3.47237 4.65005 3.47237 5.49363C3.47237 7.26456 5.759 8.5793 6.99875 8.5793C8.23846 8.5793 10.5262 7.26456 10.5262 5.49363ZM10.5262 5.49363C11.8059 5.49363 12.7306 3.92921 12.7306 2.40788V1.96707H10.5266M3.47351 1.96707H1.26953V2.40788C1.26953 3.92921 2.19383 5.49352 3.47351 5.49352" stroke="black" stroke-width="0.636724" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                                
-                                </div>
-                                <p>Expert recommendations on airlines, lounges, dates</p>
-                            </div>
-                            <div class="icon-list-item">
-                                <div class="icon-logo">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.00005 3.8284C5.945 3.8284 5.08988 4.39826 5.08988 5.10184C5.08988 5.80542 5.945 6.37529 7.00005 6.37529C8.0551 6.37529 8.91022 6.94516 8.91022 7.64874C8.91022 8.35232 8.0551 8.92219 7.00005 8.92219M7.00005 3.8284C7.70681 3.8284 8.32443 4.08436 8.65489 4.46512ZM7.00005 3.8284V3.19167ZM7.00005 3.8284V8.92219ZM7.00005 8.92219V9.55891ZM7.00005 8.92219C6.29328 8.92219 5.67566 8.66623 5.3452 8.28546ZM12.7306 6.37529C12.7306 7.12783 12.5823 7.87301 12.2944 8.56827C12.0064 9.26352 11.5843 9.89525 11.0521 10.4274C10.52 10.9595 9.88828 11.3816 9.19302 11.6696C8.49776 11.9576 7.75259 12.1058 7.00005 12.1058C6.24751 12.1058 5.50233 11.9576 4.80707 11.6696C4.11182 11.3816 3.48009 10.9595 2.94796 10.4274C2.41583 9.89525 1.99373 9.26352 1.70574 8.56827C1.41776 7.87301 1.26953 7.12783 1.26953 6.37529C1.26953 4.85546 1.87328 3.39789 2.94796 2.3232C4.02264 1.24852 5.48022 0.644775 7.00005 0.644775C8.51988 0.644775 9.97745 1.24852 11.0521 2.3232C12.1268 3.39789 12.7306 4.85546 12.7306 6.37529Z" fill="white"/>
-                                        <path d="M7.00005 3.8284C5.945 3.8284 5.08988 4.39826 5.08988 5.10184C5.08988 5.80542 5.945 6.37529 7.00005 6.37529C8.0551 6.37529 8.91022 6.94516 8.91022 7.64874C8.91022 8.35232 8.0551 8.92219 7.00005 8.92219M7.00005 3.8284C7.70681 3.8284 8.32443 4.08436 8.65489 4.46512M7.00005 3.8284V3.19167M7.00005 3.8284V8.92219M7.00005 8.92219V9.55891M7.00005 8.92219C6.29328 8.92219 5.67566 8.66623 5.3452 8.28546M12.7306 6.37529C12.7306 7.12783 12.5823 7.87301 12.2944 8.56827C12.0064 9.26352 11.5843 9.89525 11.0521 10.4274C10.52 10.9595 9.88828 11.3816 9.19302 11.6696C8.49776 11.9576 7.75259 12.1058 7.00005 12.1058C6.24751 12.1058 5.50233 11.9576 4.80707 11.6696C4.11182 11.3816 3.48009 10.9595 2.94796 10.4274C2.41583 9.89525 1.99373 9.26352 1.70574 8.56827C1.41776 7.87301 1.26953 7.12783 1.26953 6.37529C1.26953 4.85546 1.87328 3.39789 2.94796 2.3232C4.02264 1.24852 5.48022 0.644775 7.00005 0.644775C8.51988 0.644775 9.97745 1.24852 11.0521 2.3232C12.1268 3.39789 12.7306 4.85546 12.7306 6.37529Z" stroke="black" stroke-width="0.636724" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                               
-                                </div>
-                                <p>Time saved: We handle research, transfers, ticketing</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-item-footer">
-                        <a href="https://connect.point.me/concierge-booking" target="_self" class="btn btn-secondary">Get started</a>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-body">
-                        <div class="card-item-head">
-                            <div class="card-item-img">
-                                <picture>
-                                    <source srcset="assets/images/2x/webp/about_service2@2x.webp 2x, assets/images/webp/about_service2.webp 1x" type="image/webp">
-                                    <source srcset="assets/images/2x/about_service2@2x.png 2x, assets/images/about_service2.png 1x" type="image/png">
-                                    <img src="assets/images/about_service2.png" alt="Full service flight booking" loading="lazy" class="img-fluid">
-                                </picture>
-                            </div>
-                            <h4 class="card-item-title">Elite status and mileage runs</h4>
-                        </div>
-                        <p class="card-item-subtitle">Take the guesswork out of hitting your next loyalty program level</p>
-                        <div class="icon-list">
-                            <div class="icon-list-item">
-                                <div class="icon-logo">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.00005 1.5069C7.34225 1.11895 7.79448 0.844394 8.29655 0.719777C8.79863 0.595161 9.32675 0.626389 9.81064 0.809306C10.2945 0.992223 10.7113 1.31816 11.0054 1.74374C11.2994 2.16931 11.457 2.67436 11.457 3.19167C11.457 3.70898 11.2994 4.21403 11.0054 4.63961C10.7113 5.06519 10.2945 5.39112 9.81064 5.57404C9.32675 5.75696 8.79863 5.78818 8.29655 5.66357C7.79448 5.53895 7.34225 5.2644 7.00005 4.87644M8.91022 12.1058H1.26953V11.4691C1.26953 10.4559 1.67203 9.48415 2.38848 8.76769C3.10494 8.05124 4.07666 7.64874 5.08988 7.64874C6.10309 7.64874 7.07481 8.05124 7.79127 8.76769C8.50772 9.48415 8.91022 10.4559 8.91022 11.4691V12.1058ZM8.91022 12.1058H12.7306V11.4691C12.7307 10.7984 12.5542 10.1396 12.2189 9.55872C11.8837 8.97788 11.4014 8.49553 10.8206 8.16017C10.2398 7.8248 9.58101 7.64822 8.91035 7.6482C8.2397 7.64818 7.58085 7.8247 7.00005 8.16003M7.63677 3.19167C7.63677 3.86715 7.36844 4.51496 6.8908 4.9926C6.41317 5.47024 5.76535 5.73857 5.08988 5.73857C4.4144 5.73857 3.76658 5.47024 3.28895 4.9926C2.81131 4.51496 2.54298 3.86715 2.54298 3.19167C2.54298 2.51619 2.81131 1.86838 3.28895 1.39074C3.76658 0.913109 4.4144 0.644776 5.08988 0.644776C5.76535 0.644776 6.41317 0.913109 6.8908 1.39074C7.36844 1.86838 7.63677 2.51619 7.63677 3.19167Z" fill="white"/>
-                                        <path d="M7.00005 1.5069C7.34225 1.11895 7.79448 0.844394 8.29655 0.719777C8.79863 0.595161 9.32675 0.626389 9.81064 0.809306C10.2945 0.992223 10.7113 1.31816 11.0054 1.74374C11.2994 2.16931 11.457 2.67436 11.457 3.19167C11.457 3.70898 11.2994 4.21403 11.0054 4.63961C10.7113 5.06519 10.2945 5.39112 9.81064 5.57404C9.32675 5.75696 8.79863 5.78818 8.29655 5.66357C7.79448 5.53895 7.34225 5.2644 7.00005 4.87644M8.91022 12.1058H1.26953V11.4691C1.26953 10.4559 1.67203 9.48415 2.38848 8.76769C3.10494 8.05124 4.07666 7.64874 5.08988 7.64874C6.10309 7.64874 7.07481 8.05124 7.79127 8.76769C8.50772 9.48415 8.91022 10.4559 8.91022 11.4691V12.1058ZM8.91022 12.1058H12.7306V11.4691C12.7307 10.7984 12.5542 10.1396 12.2189 9.55872C11.8837 8.97788 11.4014 8.49553 10.8206 8.16017C10.2398 7.8248 9.58101 7.64822 8.91035 7.6482C8.2397 7.64818 7.58085 7.8247 7.00005 8.16003M7.63677 3.19167C7.63677 3.86715 7.36844 4.51496 6.8908 4.9926C6.41317 5.47024 5.76535 5.73857 5.08988 5.73857C4.4144 5.73857 3.76658 5.47024 3.28895 4.9926C2.81131 4.51496 2.54298 3.86715 2.54298 3.19167C2.54298 2.51619 2.81131 1.86838 3.28895 1.39074C3.76658 0.913109 4.4144 0.644776 5.08988 0.644776C5.76535 0.644776 6.41317 0.913109 6.8908 1.39074C7.36844 1.86838 7.63677 2.51619 7.63677 3.19167Z" stroke="black" stroke-width="0.636724" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                          
-                                </div>
-                                <p>Program-specific mileage runs for qualification miles and/or dollars</p>
-                            </div>
-                            <div class="icon-list-item">
-                                <div class="icon-logo">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.00005 3.8284C5.945 3.8284 5.08988 4.39826 5.08988 5.10184C5.08988 5.80542 5.945 6.37529 7.00005 6.37529C8.0551 6.37529 8.91022 6.94516 8.91022 7.64874C8.91022 8.35232 8.0551 8.92219 7.00005 8.92219M7.00005 3.8284C7.70681 3.8284 8.32443 4.08436 8.65489 4.46512ZM7.00005 3.8284V3.19167ZM7.00005 3.8284V8.92219ZM7.00005 8.92219V9.55891ZM7.00005 8.92219C6.29328 8.92219 5.67566 8.66623 5.3452 8.28546ZM12.7306 6.37529C12.7306 7.12783 12.5823 7.87301 12.2944 8.56827C12.0064 9.26352 11.5843 9.89525 11.0521 10.4274C10.52 10.9595 9.88828 11.3816 9.19302 11.6696C8.49776 11.9576 7.75259 12.1058 7.00005 12.1058C6.24751 12.1058 5.50233 11.9576 4.80707 11.6696C4.11182 11.3816 3.48009 10.9595 2.94796 10.4274C2.41583 9.89525 1.99373 9.26352 1.70574 8.56827C1.41776 7.87301 1.26953 7.12783 1.26953 6.37529C1.26953 4.85546 1.87328 3.39789 2.94796 2.3232C4.02264 1.24852 5.48022 0.644775 7.00005 0.644775C8.51988 0.644775 9.97745 1.24852 11.0521 2.3232C12.1268 3.39789 12.7306 4.85546 12.7306 6.37529Z" fill="white"/>
-                                        <path d="M7.00005 3.8284C5.945 3.8284 5.08988 4.39826 5.08988 5.10184C5.08988 5.80542 5.945 6.37529 7.00005 6.37529C8.0551 6.37529 8.91022 6.94516 8.91022 7.64874C8.91022 8.35232 8.0551 8.92219 7.00005 8.92219M7.00005 3.8284C7.70681 3.8284 8.32443 4.08436 8.65489 4.46512M7.00005 3.8284V3.19167M7.00005 3.8284V8.92219M7.00005 8.92219V9.55891M7.00005 8.92219C6.29328 8.92219 5.67566 8.66623 5.3452 8.28546M12.7306 6.37529C12.7306 7.12783 12.5823 7.87301 12.2944 8.56827C12.0064 9.26352 11.5843 9.89525 11.0521 10.4274C10.52 10.9595 9.88828 11.3816 9.19302 11.6696C8.49776 11.9576 7.75259 12.1058 7.00005 12.1058C6.24751 12.1058 5.50233 11.9576 4.80707 11.6696C4.11182 11.3816 3.48009 10.9595 2.94796 10.4274C2.41583 9.89525 1.99373 9.26352 1.70574 8.56827C1.41776 7.87301 1.26953 7.12783 1.26953 6.37529C1.26953 4.85546 1.87328 3.39789 2.94796 2.3232C4.02264 1.24852 5.48022 0.644775 7.00005 0.644775C8.51988 0.644775 9.97745 1.24852 11.0521 2.3232C12.1268 3.39789 12.7306 4.85546 12.7306 6.37529Z" stroke="black" stroke-width="0.636724" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                <p>Higher status so you can enjoy upgrades year-long</p>
-                            </div>
-                            <div class="icon-list-item">
-                                <div class="icon-logo">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5.08987 12.1058H8.91024ZM6.99989 12.1058V8.57935ZM10.5262 5.49363C10.5262 4.0985 10.524 1.78453 10.5229 1.08558C10.5229 0.968675 10.4764 0.856554 10.3938 0.773884C10.3111 0.691219 10.199 0.644775 10.0821 0.644775L3.91675 0.651939C3.80008 0.651939 3.68817 0.698189 3.60554 0.780563C3.52292 0.862931 3.47632 0.974697 3.47595 1.09136C3.47595 1.93386 3.47237 4.65005 3.47237 5.49363C3.47237 7.26456 5.759 8.5793 6.99875 8.5793C8.23846 8.5793 10.5262 7.26456 10.5262 5.49363ZM10.5262 5.49363C11.8059 5.49363 12.7306 3.92921 12.7306 2.40788V1.96707H10.5266M3.47351 1.96707H1.26953V2.40788C1.26953 3.92921 2.19383 5.49352 3.47351 5.49352" fill="white"/>
-                                        <path d="M5.08987 12.1058H8.91024M6.99989 12.1058V8.57935M10.5262 5.49363C10.5262 4.0985 10.524 1.78453 10.5229 1.08558C10.5229 0.968675 10.4764 0.856554 10.3938 0.773884C10.3111 0.691219 10.199 0.644775 10.0821 0.644775L3.91675 0.651939C3.80008 0.651939 3.68817 0.698189 3.60554 0.780563C3.52292 0.862931 3.47632 0.974697 3.47595 1.09136C3.47595 1.93386 3.47237 4.65005 3.47237 5.49363C3.47237 7.26456 5.759 8.5793 6.99875 8.5793C8.23846 8.5793 10.5262 7.26456 10.5262 5.49363ZM10.5262 5.49363C11.8059 5.49363 12.7306 3.92921 12.7306 2.40788V1.96707H10.5266M3.47351 1.96707H1.26953V2.40788C1.26953 3.92921 2.19383 5.49352 3.47351 5.49352" stroke="black" stroke-width="0.636724" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                <p>Advice for meeting spend requirements at a fraction of the normal cost</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-item-footer">
-                        <a href="https://www.point.me/mileage-runs" target="_self" class="btn btn-secondary">Get started</a>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-body">
-                        <div class="card-item-head">
-                            <div class="card-item-img">
-                                <picture>
-                                    <source srcset="assets/images/2x/webp/about_service3@2x.webp 2x, assets/images/webp/about_service3.webp 1x" type="image/webp">
-                                    <source srcset="assets/images/2x/about_service3@2x.png 2x, assets/images/about_service3.png 1x" type="image/png">
-                                    <img src="assets/images/about_service3.png" alt="Full service flight booking" loading="lazy" class="img-fluid">
-                                </picture>
-                            </div>
-                            <h4 class="card-item-title">Points strategy consultation</h4>
-                        </div>
-                        <p class="card-item-subtitle">Maximize your award travel dreams with a customized earning strategy</p>
-                        <div class="icon-list">
-                            <div class="icon-list-item">
-                                <div class="icon-logo">
-                                    <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.08986 1.91822H1.81642C1.47868 1.91822 1.15477 2.05239 0.915953 2.29121C0.677135 2.53003 0.542969 2.85393 0.542969 3.19167V10.8324C0.542969 11.1701 0.677135 11.494 0.915953 11.7328C1.15477 11.9716 1.47868 12.1058 1.81642 12.1058H8.18366C8.5214 12.1058 8.8453 11.9716 9.08412 11.7328C9.32294 11.494 9.45711 11.1701 9.45711 10.8324V3.19167C9.45711 2.85393 9.32294 2.53003 9.08412 2.29121C8.8453 2.05239 8.5214 1.91822 8.18366 1.91822H6.91021M3.08986 1.91822C3.08986 2.25596 3.22403 2.57987 3.46285 2.81869C3.70167 3.05751 4.02557 3.19167 4.36331 3.19167H5.63676C5.9745 3.19167 6.29841 3.05751 6.53722 2.81869C6.77604 2.57987 6.91021 2.25596 6.91021 1.91822M3.08986 1.91822C3.08986 1.58048 3.22403 1.25658 3.46285 1.01776C3.70167 0.778942 4.02557 0.644775 4.36331 0.644775H5.63676C5.9745 0.644775 6.29841 0.778942 6.53722 1.01776C6.77604 1.25658 6.91021 1.58048 6.91021 1.91822M5.00004 6.37529H6.91021ZM5.00004 8.92219H6.91021ZM3.08986 6.37529H3.09623ZM3.08986 8.92219H3.09623Z" fill="white"/>
-                                        <path d="M3.08986 1.91822H1.81642C1.47868 1.91822 1.15477 2.05239 0.915953 2.29121C0.677135 2.53003 0.542969 2.85393 0.542969 3.19167V10.8324C0.542969 11.1701 0.677135 11.494 0.915953 11.7328C1.15477 11.9716 1.47868 12.1058 1.81642 12.1058H8.18366C8.5214 12.1058 8.8453 11.9716 9.08412 11.7328C9.32294 11.494 9.45711 11.1701 9.45711 10.8324V3.19167C9.45711 2.85393 9.32294 2.53003 9.08412 2.29121C8.8453 2.05239 8.5214 1.91822 8.18366 1.91822H6.91021M3.08986 1.91822C3.08986 2.25596 3.22403 2.57987 3.46285 2.81869C3.70167 3.05751 4.02557 3.19167 4.36331 3.19167H5.63676C5.9745 3.19167 6.29841 3.05751 6.53722 2.81869C6.77604 2.57987 6.91021 2.25596 6.91021 1.91822M3.08986 1.91822C3.08986 1.58048 3.22403 1.25658 3.46285 1.01776C3.70167 0.778942 4.02557 0.644775 4.36331 0.644775H5.63676C5.9745 0.644775 6.29841 0.778942 6.53722 1.01776C6.77604 1.25658 6.91021 1.58048 6.91021 1.91822M5.00004 6.37529H6.91021M5.00004 8.92219H6.91021M3.08986 6.37529H3.09623M3.08986 8.92219H3.09623" stroke="black" stroke-width="0.636724" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                                 
-                                </div>
-                                <p>Personalized inventory of your goals</p>
-                            </div>
-                            <div class="icon-list-item">
-                                <div class="icon-logo">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.00005 1.5069C7.34225 1.11895 7.79448 0.844394 8.29655 0.719777C8.79863 0.595161 9.32675 0.626389 9.81064 0.809306C10.2945 0.992223 10.7113 1.31816 11.0054 1.74374C11.2994 2.16931 11.457 2.67436 11.457 3.19167C11.457 3.70898 11.2994 4.21403 11.0054 4.63961C10.7113 5.06519 10.2945 5.39112 9.81064 5.57404C9.32675 5.75696 8.79863 5.78818 8.29655 5.66357C7.79448 5.53895 7.34225 5.2644 7.00005 4.87644M8.91022 12.1058H1.26953V11.4691C1.26953 10.4559 1.67203 9.48415 2.38848 8.76769C3.10494 8.05124 4.07666 7.64874 5.08988 7.64874C6.10309 7.64874 7.07481 8.05124 7.79127 8.76769C8.50772 9.48415 8.91022 10.4559 8.91022 11.4691V12.1058ZM8.91022 12.1058H12.7306V11.4691C12.7307 10.7984 12.5542 10.1396 12.2189 9.55872C11.8837 8.97788 11.4014 8.49553 10.8206 8.16017C10.2398 7.8248 9.58101 7.64822 8.91035 7.6482C8.2397 7.64818 7.58085 7.8247 7.00005 8.16003M7.63677 3.19167C7.63677 3.86715 7.36844 4.51496 6.8908 4.9926C6.41317 5.47024 5.76535 5.73857 5.08988 5.73857C4.4144 5.73857 3.76658 5.47024 3.28895 4.9926C2.81131 4.51496 2.54298 3.86715 2.54298 3.19167C2.54298 2.51619 2.81131 1.86838 3.28895 1.39074C3.76658 0.913109 4.4144 0.644776 5.08988 0.644776C5.76535 0.644776 6.41317 0.913109 6.8908 1.39074C7.36844 1.86838 7.63677 2.51619 7.63677 3.19167Z" fill="white"/>
-                                        <path d="M7.00005 1.5069C7.34225 1.11895 7.79448 0.844394 8.29655 0.719777C8.79863 0.595161 9.32675 0.626389 9.81064 0.809306C10.2945 0.992223 10.7113 1.31816 11.0054 1.74374C11.2994 2.16931 11.457 2.67436 11.457 3.19167C11.457 3.70898 11.2994 4.21403 11.0054 4.63961C10.7113 5.06519 10.2945 5.39112 9.81064 5.57404C9.32675 5.75696 8.79863 5.78818 8.29655 5.66357C7.79448 5.53895 7.34225 5.2644 7.00005 4.87644M8.91022 12.1058H1.26953V11.4691C1.26953 10.4559 1.67203 9.48415 2.38848 8.76769C3.10494 8.05124 4.07666 7.64874 5.08988 7.64874C6.10309 7.64874 7.07481 8.05124 7.79127 8.76769C8.50772 9.48415 8.91022 10.4559 8.91022 11.4691V12.1058ZM8.91022 12.1058H12.7306V11.4691C12.7307 10.7984 12.5542 10.1396 12.2189 9.55872C11.8837 8.97788 11.4014 8.49553 10.8206 8.16017C10.2398 7.8248 9.58101 7.64822 8.91035 7.6482C8.2397 7.64818 7.58085 7.8247 7.00005 8.16003M7.63677 3.19167C7.63677 3.86715 7.36844 4.51496 6.8908 4.9926C6.41317 5.47024 5.76535 5.73857 5.08988 5.73857C4.4144 5.73857 3.76658 5.47024 3.28895 4.9926C2.81131 4.51496 2.54298 3.86715 2.54298 3.19167C2.54298 2.51619 2.81131 1.86838 3.28895 1.39074C3.76658 0.913109 4.4144 0.644776 5.08988 0.644776C5.76535 0.644776 6.41317 0.913109 6.8908 1.39074C7.36844 1.86838 7.63677 2.51619 7.63677 3.19167Z" stroke="black" stroke-width="0.636724" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                        
-                                </div>
-                                <p>Bespoke earning and spending recommendations</p>
-                            </div>
-                            <div class="icon-list-item">
-                                <div class="icon-logo">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.00005 3.8284V6.37529L8.91022 8.28546M12.7306 6.37529C12.7306 7.12783 12.5823 7.87301 12.2944 8.56827C12.0064 9.26352 11.5843 9.89525 11.0521 10.4274C10.52 10.9595 9.88828 11.3816 9.19302 11.6696C8.49776 11.9576 7.75259 12.1058 7.00005 12.1058C6.24751 12.1058 5.50233 11.9576 4.80707 11.6696C4.11182 11.3816 3.48009 10.9595 2.94796 10.4274C2.41583 9.89525 1.99373 9.26352 1.70574 8.56827C1.41776 7.87301 1.26953 7.12783 1.26953 6.37529C1.26953 4.85546 1.87328 3.39789 2.94796 2.3232C4.02264 1.24852 5.48022 0.644775 7.00005 0.644775C8.51988 0.644775 9.97745 1.24852 11.0521 2.3232C12.1268 3.39789 12.7306 4.85546 12.7306 6.37529Z" fill="white"/>
-                                        <path d="M7.00005 3.8284V6.37529L8.91022 8.28546M12.7306 6.37529C12.7306 7.12783 12.5823 7.87301 12.2944 8.56827C12.0064 9.26352 11.5843 9.89525 11.0521 10.4274C10.52 10.9595 9.88828 11.3816 9.19302 11.6696C8.49776 11.9576 7.75259 12.1058 7.00005 12.1058C6.24751 12.1058 5.50233 11.9576 4.80707 11.6696C4.11182 11.3816 3.48009 10.9595 2.94796 10.4274C2.41583 9.89525 1.99373 9.26352 1.70574 8.56827C1.41776 7.87301 1.26953 7.12783 1.26953 6.37529C1.26953 4.85546 1.87328 3.39789 2.94796 2.3232C4.02264 1.24852 5.48022 0.644775 7.00005 0.644775C8.51988 0.644775 9.97745 1.24852 11.0521 2.3232C12.1268 3.39789 12.7306 4.85546 12.7306 6.37529Z" stroke="black" stroke-width="0.636724" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                        
-                                </div>
-                                <p>Individual action plan to ensure you stay on track</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-item-footer">
-                        <a href="https://connect.point.me/points-strategy-consults" target="_self" class="btn btn-secondary">Get started</a>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-body">
-                        <div class="card-item-head">
-                            <div class="card-item-img">
-                                <picture>
-                                    <source srcset="assets/images/2x/webp/about_service4@2x.webp 2x, assets/images/webp/about_service4.webp 1x" type="image/webp">
-                                    <source srcset="assets/images/2x/about_service4@2x.png 2x, assets/images/about_service4.png 1x" type="image/png">
-                                    <img src="assets/images/about_service4.png" alt="Full service flight booking" loading="lazy" class="img-fluid">
-                                </picture>
-                            </div>
-                            <h4 class="card-item-title">Custom packages</h4>
-                        </div>
-                        <p class="card-item-subtitle">Not everything fits neatly into a box. Book a free consultation, and we’ll craft a custom quote that fits...</p>
-                        <div class="icon-list">
-                            <div class="icon-list-item">
-                                <div class="icon-logo">
-                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.2735 5.10184H11.3068C11.5239 5.10185 11.7373 5.15733 11.9269 5.26301C12.1165 5.3687 12.2759 5.52108 12.39 5.70569C12.5041 5.8903 12.5692 6.10102 12.579 6.31784C12.5888 6.53465 12.543 6.75038 12.4459 6.94452L10.2174 11.4016C10.1116 11.6133 9.94896 11.7913 9.74764 11.9157C9.54632 12.0401 9.31433 12.1059 9.07768 12.1058H6.51996C6.41617 12.1058 6.31239 12.0931 6.21115 12.0676L3.81643 11.4691M8.2735 5.10184V1.91822C8.2735 1.58048 8.13933 1.25658 7.90051 1.01776C7.66169 0.778942 7.33779 0.644775 7.00005 0.644775H6.93956C6.6212 0.644775 6.36332 0.902649 6.36332 1.22101C6.36332 1.67563 6.22898 2.12006 5.9762 2.49828L3.81643 5.73857V11.4691M8.2735 5.10184H7.00005ZM3.81643 11.4691H2.54298C2.20524 11.4691 1.88133 11.3349 1.64252 11.0961C1.4037 10.8573 1.26953 10.5334 1.26953 10.1956V6.37529C1.26953 6.03755 1.4037 5.71365 1.64252 5.47483C1.88133 5.23601 2.20524 5.10184 2.54298 5.10184H4.13479" fill="white"/>
-                                        <path d="M8.2735 5.10184H11.3068C11.5239 5.10185 11.7373 5.15733 11.9269 5.26301C12.1165 5.3687 12.2759 5.52108 12.39 5.70569C12.5041 5.8903 12.5692 6.10102 12.579 6.31784C12.5888 6.53465 12.543 6.75038 12.4459 6.94452L10.2174 11.4016C10.1116 11.6133 9.94896 11.7913 9.74764 11.9157C9.54632 12.0401 9.31433 12.1059 9.07768 12.1058H6.51996C6.41617 12.1058 6.31239 12.0931 6.21115 12.0676L3.81643 11.4691M8.2735 5.10184V1.91822C8.2735 1.58048 8.13933 1.25658 7.90051 1.01776C7.66169 0.778942 7.33779 0.644775 7.00005 0.644775H6.93956C6.6212 0.644775 6.36332 0.902649 6.36332 1.22101C6.36332 1.67563 6.22898 2.12006 5.9762 2.49828L3.81643 5.73857V11.4691M8.2735 5.10184H7.00005M3.81643 11.4691H2.54298C2.20524 11.4691 1.88133 11.3349 1.64252 11.0961C1.4037 10.8573 1.26953 10.5334 1.26953 10.1956V6.37529C1.26953 6.03755 1.4037 5.71365 1.64252 5.47483C1.88133 5.23601 2.20524 5.10184 2.54298 5.10184H4.13479" stroke="black" stroke-width="0.636724" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                                                                   
-                                </div>
-                                <p>Hire a designated points manager</p>
-                            </div>
-                            <div class="icon-list-item">
-                                <div class="icon-logo">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.7306 8.17439C10.9098 8.91058 8.96397 9.28787 7.00005 9.28547C4.97336 9.28547 3.03962 8.8907 1.26953 8.17439M9.54694 3.55495V2.2815C9.54694 1.94377 9.41278 1.61986 9.17396 1.38104C8.93514 1.14222 8.61124 1.00806 8.2735 1.00806H5.7266C5.38886 1.00806 5.06495 1.14222 4.82614 1.38104C4.58732 1.61986 4.45315 1.94377 4.45315 2.2815V3.55495M7.00005 7.3753H7.00642ZM2.54298 12.4691H11.4571C11.7949 12.4691 12.1188 12.3349 12.3576 12.0961C12.5964 11.8573 12.7306 11.5334 12.7306 11.1956V4.8284C12.7306 4.49066 12.5964 4.16675 12.3576 3.92794C12.1188 3.68912 11.7949 3.55495 11.4571 3.55495H2.54298C2.20524 3.55495 1.88133 3.68912 1.64252 3.92794C1.4037 4.16675 1.26953 4.49066 1.26953 4.8284V11.1956C1.26953 11.5334 1.4037 11.8573 1.64252 12.0961C1.88133 12.3349 2.20524 12.4691 2.54298 12.4691Z" fill="white"/>
-                                        <path d="M12.7306 8.17439C10.9098 8.91058 8.96397 9.28787 7.00005 9.28547C4.97336 9.28547 3.03962 8.8907 1.26953 8.17439M9.54694 3.55495V2.2815C9.54694 1.94377 9.41278 1.61986 9.17396 1.38104C8.93514 1.14222 8.61124 1.00806 8.2735 1.00806H5.7266C5.38886 1.00806 5.06495 1.14222 4.82614 1.38104C4.58732 1.61986 4.45315 1.94377 4.45315 2.2815V3.55495M7.00005 7.3753H7.00642M2.54298 12.4691H11.4571C11.7949 12.4691 12.1188 12.3349 12.3576 12.0961C12.5964 11.8573 12.7306 11.5334 12.7306 11.1956V4.8284C12.7306 4.49066 12.5964 4.16675 12.3576 3.92794C12.1188 3.68912 11.7949 3.55495 11.4571 3.55495H2.54298C2.20524 3.55495 1.88133 3.68912 1.64252 3.92794C1.4037 4.16675 1.26953 4.49066 1.26953 4.8284V11.1956C1.26953 11.5334 1.4037 11.8573 1.64252 12.0961C1.88133 12.3349 2.20524 12.4691 2.54298 12.4691Z" stroke="black" stroke-width="0.636724" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                            
-                                </div>
-                                <p>Large group bookings</p>
-                            </div>
-                            <div class="icon-list-item">
-                                <div class="icon-logo">
-                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2.54298 0.644775V3.19167ZM1.26953 1.91822H3.81643ZM3.1797 9.55891V12.1058ZM1.90626 10.8324H4.45315ZM7.63677 0.644775L9.09232 5.01079L12.7306 6.37529L9.09232 7.73979L7.63677 12.1058L6.18122 7.73979L2.54298 6.37529L6.18122 5.01079L7.63677 0.644775Z" fill="white"/>
-                                        <path d="M2.54298 0.644775V3.19167M1.26953 1.91822H3.81643M3.1797 9.55891V12.1058M1.90626 10.8324H4.45315M7.63677 0.644775L9.09232 5.01079L12.7306 6.37529L9.09232 7.73979L7.63677 12.1058L6.18122 7.73979L2.54298 6.37529L6.18122 5.01079L7.63677 0.644775Z" stroke="black" stroke-width="0.636724" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>                                                                                
-                                </div>
-                                <p>Honeymoon planning</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-item-footer">
-                        <a href="https://connect.point.me/premierservices" target="_self" class="btn btn-secondary">Get started</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <span class="open-btn">
-            <svg width="20" height="18" viewBox="0 0 20 18"><use xlink:href='#open-ico'/></svg>
-        </span>
-    </section>
-    <!-- End concierge section -->
 
     <!-- Start tab section -->
     <section class="section tab-section">
@@ -611,12 +468,12 @@
     <!-- Start quote section --> 
     <div class="section section-quote"> 
         <div class="content-wrap"> 
-            <div class="quote-wrap">
+            <div class="quote-wrap"> 
                 <picture>
                     <source srcset="assets/images/2x/webp/tiffany-funk@2x.webp 2x, assets/images/webp/tiffany-funk.webp 1x" type="image/webp">
                     <source srcset="assets/images/2x/tiffany-funk@2x.png 2x, assets/images/tiffany-funk.png 1x" type="image/png">
                     <img src="assets/images/tiffany-funk.png" alt="tiffany-funk" loading="lazy" class="quote-img">
-                </picture>
+                </picture> 
                 <img class="quote-ico" src="assets/images/quote.svg" alt="quote-ico"> 
                 <p class="quote-title"> 
                     I hear all the time from business travelers who ‘saved their miles for retirement,’ and are devastated to learn that the purchasing power of their miles isn't what it would have been five, ten, fifteen years ago. I personally invite you to join now and get 6x - 12x more value from your points. 
