@@ -1247,6 +1247,9 @@ ul.radio-list li {
     right: 5px;
     z-index: 1;
 }
+.month-holder {
+    display: none;
+}
 .footer {
     background: #fff;
 }
