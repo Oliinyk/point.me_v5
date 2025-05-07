@@ -63,15 +63,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const descElement = document.querySelector(".plan-price-wrap .desc");
     const btn = document.querySelector(".standard-card .btn");
 
+    const monthText = document.querySelector(".month-holder");
+    const annualText = document.querySelector(".annual-holder");
+    
     checkbox.addEventListener("change", function () {
         if (checkbox.checked) {
             priceElement.textContent = "ONLY $10.75";
             descElement.style.display = "block";
             btn.href = "https://www.point.me/signup/standard"; // Annual
+            monthText.style.display = "none";
+            annualText.style.display = "block";
         } else {
             priceElement.textContent = "$12";
             descElement.style.display = "none";
             btn.href = "https://www.point.me/signup/monthly"; // Monthly
+            monthText.style.display = "block";
+            annualText.style.display = "none";
         }
     });
 
