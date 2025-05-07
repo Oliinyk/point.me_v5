@@ -1899,6 +1899,9 @@ ul.radio-list li {
     .stories-section .trustpilot-widget iframe {
         height: 85px !important;
     }
+    .img-title {
+        max-width: 370px;
+    }
 }
 @media (max-width: 360px) {
     .img-title {
