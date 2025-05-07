@@ -393,9 +393,14 @@ ul.check-list li {
     height: 17px;
     width: 17px;
 }
-.check-list .item-primary {
+.item-primary {
     color: var(--primary-700);
     font-family: 'garnett semibold';
+    margin: 0 0 5px;
+}
+.item-above-price {
+    max-width: 290px;
+    margin: 0 0 10px;
 }
 .hero .check-list {
     margin: 30px 0 20px;
@@ -1222,14 +1227,22 @@ ul.radio-list li {
 .t-h4 {
     font-size: 22px;
 }
+.t-h4 span {
+    font-family: var(--garnett-semibold);
+}
 .pricing-card .t-h4 {
-    max-width: 575px;
+    max-width: 530px;
     margin: 0 auto 20px;
 }
 .pricing-row .pricing-subheading {
     max-width: 690px;
     margin: 0 auto 27px;
     line-height: 2.3;
+}
+.pricing-row .check-list {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 .pricing-row .pricing-card .btn {
     max-width: 224px;
@@ -1882,5 +1895,10 @@ ul.radio-list li {
     }
     .stories-section .trustpilot-widget iframe {
         height: 85px !important;
+    }
+}
+@media (max-width: 360px) {
+    .img-title {
+        font-size: 18px;
     }
 }

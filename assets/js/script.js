@@ -49,6 +49,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    //close mobile nav
+    const navLink = document.querySelectorAll(".nav-link");
+    navLink.forEach(nav => {
+        nav.addEventListener("click", function () {
+            siteHeader.classList.remove("is-active");
+        })
+    });
+
     // price checkbox
     const checkbox = document.getElementById("switch");
     const priceElement = document.querySelector(".plan-main");
