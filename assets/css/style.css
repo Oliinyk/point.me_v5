@@ -1228,10 +1228,10 @@ ul.radio-list li {
     font-size: 22px;
 }
 .t-h4 span {
-    font-family: var(--garnett-semibold);
+    font-size: 16px;
 }
 .pricing-card .t-h4 {
-    max-width: 530px;
+    max-width: 580px;
     margin: 0 auto 20px;
 }
 .pricing-row .pricing-subheading {
@@ -1316,6 +1316,9 @@ ul.radio-list li {
     }
     .show-sm {
         display: none;
+    }
+    .t-h4 {
+        font-family: var(--garnett-semibold);
     }
 }
 @media (max-width: 1270px) {
@@ -1857,6 +1860,10 @@ ul.radio-list li {
     .pricing-card .t-h4 {
         font-size: 14px;
         max-width: 100%;
+    }
+    .pricing-card .t-h4 span {
+        font-size: 12px;
+        display: block;
     }
     .pricing-row .pricing-subheading {
         line-height: 1.6;
